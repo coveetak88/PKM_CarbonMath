@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/splash_bg"
+    android:paddingTop="@android:dimen/app_icon_size"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_menu_24"
+        app:layout_constraintBottom_toTopOf="@+id/image_slider"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:onClick="openMenu"/>
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="325dp"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toTopOf="@+id/image_slider"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:onClick="openactivity_panduan"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="@string/selamat_datang"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/kenalan_dulu_yuk_sama_kami"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/jelajahiActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/col_green"
+        android:onClick="openMenu"
+        android:text="@string/jelajahi_sekarang"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="90"
+        app:iss_delay="0"
+        app:iss_period="2000"
+        app:iss_selected_dot="@drawable/active_dot"
+        app:iss_unselected_dot="@drawable/inactive_dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_slider">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="288dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center">
+
+        </LinearLayout>
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/cadet"
+        app:itemTextColor="@drawable/custom_bottom_nav"
+        app:itemIconTint="@drawable/custom_bottom_nav"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="imageMenu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

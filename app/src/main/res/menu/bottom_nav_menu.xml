@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/calculator"
+        android:icon="@drawable/baseline_calculate_24"
+        android:title="Calculator" />
+    <item
+        android:id="@+id/History"
+        android:icon="@drawable/baseline_history_24"
+        android:title="History" />
+    <item
+        android:id="@+id/process"
+        android:icon="@drawable/baseline_process"
+        android:title="Process" />
+    <item
+        android:id="@+id/information"
+        android:icon="@drawable/baseline_information"
+        android:title="Information"/>
+</menu>

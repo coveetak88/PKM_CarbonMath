@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Splash Screen</string>
+    <string name="jelajahi_sekarang">Klik disini untuk menjelajahi!</string>
+    <string name="kenalan_dulu_yuk_sama_kami">Kenalan Dulu Yuk Sama Kami!</string>
+    <string name="hi">hi</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="panduan">Bantuan</string>
+    <string name="mulai_sekarang">Olah Data</string>
+    <string name="historystatistik">Riwayat dan Statistik</string>
+    <string name="statistik">Statistik</string>
+    <string name="history">Riwayat</string>
+    <string name="panduan_penggunaan">Panduan Penggunaan</string>
+    <string name="informasi">Informasi</string>
+    <string name="read_this_out">Tentang Kami</string>
+    <string name="p1">CarbonMath merupakan mesin AI yang melibatkan visi komputer sehingga dapat melakukan perhitungan simpanan karbon pada hutan berdasarkan input gambar yang diterima dari kamera yang dipasangkan di lokasi. Proses yang melibatkan AI adalah proses image recognition. </string>
+    <string name="p2">Jika mesin tersebut mengenali objek sebagai sebuah benda yang disebut pohon, maka mesin akan melanjutkan proses pengambilan data. Kemudian, dari gambar pohon tersebut data yang diambil adalah tinggi dan diameter pohon. Data tersebut kemudian akan diolah dan mendapatkan hasil tingkat kadar karbon dari perhitungan yang diimplementasikan di dalam aplikasi.</string>
+    <string name="apa_itu_ai">Apa itu AI?</string>
+    <string name="read_more1">Baca selengkapnya <a href="https://www.techtarget.com/searchenterpriseai/definition/AI-Artificial-Intelligence">Disini</a></string>
+    <string name="read_more2">Baca selengkapnya <a href="https://www.simplilearn.com/computer-vision-article">Disini</a></string>
+    <string name="visi_komputer">Apa itu Computer Vision?</string>
+    <string name="please_input_the_following_data">Silahkan Masukkan Data Dibawah ini:</string>
+    <string name="the_height_of_observer_phone_from_the_floor">Tinggi pengamat/HP dari tanah (sumbu y)</string>
+    <string name="x_distance_from_the_observer_to_the_tree">Jarak dari pohon ke pengamat/HP (sumbu x)</string>
+    <string name="choose_the_tree_type">Silahkan pilih pohon yang ingin diuji:</string>
+    <string name="home">Halaman Utama</string>
+    <string name="login">Masuk</string>
+    <string name="my_account">Akun Saya</string>
+    <string name="logout">Keluar</string>
+
+
+
+</resources>
